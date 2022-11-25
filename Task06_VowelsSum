@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string word;
+
+	std::getline(std::cin, word);
+
+	int sum = 0;
+
+	int i;
+
+	for (i = 0; i < word.length(); i++)
+	{
+		char letter = word[i];
+
+		if (word[i] == 'a')
+		{
+			sum++; 
+		}
+		else if (word[i] == 'e')
+		{
+		sum += 2;
+		}
+		else if (word[i] == 'i')
+		{
+			sum += 3;
+		}
+		else if (word[i] == 'o')
+		{
+			sum += 4;
+		}
+		else if (word[i] == 'u')
+		{
+			sum += 5;
+		}
+}
+
+	std::cout << sum << std::endl;
+
+
+	return 0;
+}
