@@ -1,0 +1,31 @@
+#include <iostream>
+#include <climits>
+#include <cmath>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int n;
+	std::cin >> n;
+
+	int number;
+	std::cin >> number;
+
+	int maxNumber = number, minNumber = number;
+
+	for (int i = 0; i < n - 1; i++)
+	{ 
+		int curNumber;
+		std::cin >> curNumber;
+
+		maxNumber = std::max(maxNumber, curNumber);
+		minNumber = std::min(minNumber, curNumber);		
+
+		}
+	std::cout << "Max number: " << maxNumber << std::endl;
+	std::cout << "Min number: " << minNumber << std::endl;
+
+	return 0;
+}
