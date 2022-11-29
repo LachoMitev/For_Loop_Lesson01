@@ -32,9 +32,9 @@ int main()
 		money += 10 * i;
 	}
 
-	money += (toyYears * toyPrice) - moneyYears;
+	money += ((toyYears * toyPrice) *1.00) - moneyYears;
 
-	double diff = abs((washingMach - money)*1.00);
+	double diff = abs(washingMach - money);
 
 	if (money - washingMach >= 0)
 	{
